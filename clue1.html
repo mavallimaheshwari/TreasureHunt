@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunting</title>
+    <link rel="stylesheet" href="clue1.css">
+</head>
+<body>
+    <div>
+        
+        <!--    Tool tip image  -->
+        <div class="tooltip"><img src="imgs/moon.png" width="140px" height="140px">
+            <span class="tooltiptext">ElderRing</span>
+        </div>
+
+
+        <h1>Welcome Hunters..........!!!</h1>
+        <!--    password    -->
+        <form id="loginform">
+            <label for="pwd"></label>
+            <input type="password" id="pwd" name="pwd" length="10" placeholder="--- password ---"><br><br>
+            <input type="submit" id="button" onclick="pass()">
+        </form>
+    </div>
+    
+    <!--    form    -->
+    <script>
+        const CORRECT_PASSWORD = "ElderRing";
+
+        const loginForm = document.getElementById("loginform");
+        loginForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // prevent the form from submitting
+
+        const password = document.getElementById("pwd").value;
+        if (password === CORRECT_PASSWORD) {
+            window.location.href = "clue2.html"; // redirect to protected page
+        } else {
+            alert("!!! Incorrect password !!!\nSearch for tooltip"); // display error message
+    }
+        });
+    </script>
+</body>
+</html>

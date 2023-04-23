@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunting</title>
+    <link rel="stylesheet" href="clue3.css">
+</head>
+<body>
+    <div>
+        <a class="sint" href="https://en.wikipedia.org/wiki/Elden_Ring" target="_blank" rel="noopener noreferrer"><b>Sinistrorse<br>↑</b></a>
+        <p style="font-size: 25px;color: black;text-shadow: 1px 1px 1px whitesmoke;">line..word..charecter</p>
+    </div>
+    
+        <h1 onclick="fail()">S</h1>
+        <h2 onclick="fail()">A</h2>
+        <h1 onclick="fail()">D</h1>
+        <h2 onclick="pass()">O</h2>
+        <a href="clue4.html" id="my-link-element"></a>
+        
+        <a href="fail.html" id="my-link-element2"></a>
+    <script>
+        function pass(){
+            document.getElementById("my-link-element").click();
+        }
+        
+        function fail(){
+            document.getElementById("my-link-element2").click();
+        }
+    </script>
+</body>
+</html>

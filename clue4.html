@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunting</title>
+    
+    <link rel="stylesheet" href="clue4.css">
+</head>
+<body>
+    <iframe width="1120" height="300" src="imgs/flower1.webm" title="YouTube video player" allowfullscreen allow='autoplay'></iframe>
+    <h1>What is your password???</h1>
+    <form id="loginform">
+        <input type="password" id="pwd" name="pwd" length="10" placeholder="--- password ---"><br><br>
+        
+        <label for="pwd">Don't let the surrounding fool you!</label><br><br>
+        <input type="submit" id="button" onclick="pass()">
+    </form>
+<!--
+
+        <a href="clue4.html" id="my-link-element"></a>
+        
+        <a href="fail.html" id="my-link-element2"></a>
+-->
+<!--    form    -->
+<script>
+    
+    const CORRECT_PASSWORD = "ElderRing";
+
+    const loginForm = document.getElementById("loginform");
+    loginForm.addEventListener("submit", function(event) {
+    event.preventDefault(); // prevent the form from submitting
+
+    const password = document.getElementById("pwd").value;
+    if (password === CORRECT_PASSWORD) {
+        window.location.href = "clue5.html"; // redirect to protected page
+    } else {
+        window.location.href = "fail.html"; // display error message
+      }
+    });
+</script>
+</body>
+</html>

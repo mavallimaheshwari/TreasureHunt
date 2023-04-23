@@ -1,0 +1,71 @@
+body {
+    background-image: url('imgs/steps.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h4 {
+    font-size: 20px;
+    color: rgb(254, 253, 253);
+}
+img {
+    width: 160px;
+    height: 240px;
+    border-color: aliceblue;
+    border: 2px solid rgba(255, 255, 255, 0.858);
+}
+.Nobel {
+    background-color: rgba(5, 5, 5, 0.699);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.753);
+    transition: 0.3s;
+    width: 23%;
+    margin:10px 50px;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    border-radius: 5px;
+    float: left;
+  }
+  
+  .Nobel:hover {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.585);
+  }
+  
+
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  form {
+    text-align: center;
+}
+#class {
+    height: 25px;
+    font-size: 24px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.911);
+    color: #ffffff;
+    padding: 5px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+#button {
+    background-color: #5d909bde; /* Green */
+    
+    border-radius: 6px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+  }
+
+  #button:hover {
+    
+    padding: 9px 37px;
+    font-size:21px ;
+  }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunting</title>
+    <link rel="stylesheet" href="clue2.css">
+</head>
+<body>
+    <div class="Nobel" onclick="fail()">
+        <img src="imgs/knight.jpg" alt="Avatar" >
+        <div class="container">
+          <h4><b>- Knight -</b></h4> 
+        </div>
+    </div>
+    <div class="Nobel" onclick="fail()">
+        <img src="imgs/barbarian.jpg" alt="Avatar" >
+        <div class="container">
+          <h4><b>-Barbarian -</b></h4> 
+        </div>
+    </div>
+    <div class="Nobel" onclick="fail()">
+        <img src="imgs/merchant.jpg" alt="Avatar" >
+        <div class="container">
+          <h4><b>- Merchant -</b></h4> 
+        </div>
+    </div>
+    <div class="Nobel" onclick="pass()">
+        <img src="imgs/nobel.jpg" alt="Avatar" >
+        <div class="container">
+          <h4><b>- Nobel -</b></h4> 
+        </div>
+    </div>
+    <div class="Nobel" style="height: 325px;">
+      <h2 style="padding: 40px;color: blanchedalmond;"><b>Choose your class</b></h2>
+      <h1 id="alert" style="color: blanchedalmond;"></h1>
+    </div>
+    <div class="Nobel" onclick="fail()">
+        <img src="imgs/peasant.jpg" alt="Avatar" >
+        <div class="container">
+          <h4><b>- Peasant -</b></h4> 
+        </div>
+    </div>
+    
+    <a href="clue3.html" id="my-link-element"></a>
+  
+    <script>
+      function pass(){
+        document.getElementById("my-link-element").click();
+      }
+      
+      function fail(){
+        document.getElementById("alert").innerHTML="Opps!! Wrong choice\nInspect Properly for the class";
+      }
+  </script>
+</body>
+</html>

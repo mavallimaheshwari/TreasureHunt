@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunting</title>
+    <link rel="stylesheet" href="clue5.css">
+</head>
+<body>
+<h1>www.google.com/search!q=open+sesame...rlz%3D1c1uead_enin927in927ei%3Dpr9fzmtxmpwusep6fov<br>
+    yagei%3Dwr9fzomhindesempnkyv6ay&rlz=1C1UEAD_enIN927IN927&oq=open+sesame...rlz%3D1c1uead_e<br>
+    nin927in927ei%3Dpr9fzmtxmpwusep6fovyagei%3Dwr9fzomhindesempnkyv6ay&aqs=chrome.0.69i59l3j6<br>
+    9i57.1453j0j9&sourceid=chrome&ie=UTF-8</h1><br><br><br><br><br><br><br><br><br>
+
+<form id="loginform">
+    
+<h2>Look closer!<br> Say the magical term</h2>
+    <label for="pwd"></label>
+    <input type="text" id="pwd" name="pwd" length="10" placeholder="--- key ---"><br><br>
+    <input type="submit" id="button" onclick="pass()">
+</form>
+
+<script>
+    
+        const CORRECT_PASSWORD = "open sesame";
+
+        const loginForm = document.getElementById("loginform");
+        loginForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // prevent the form from submitting
+
+        const password = document.getElementById("pwd").value;
+        if (password === CORRECT_PASSWORD) {
+            window.location.href = "victory.html"; // redirect to protected page
+        } else {
+            window.location.href = "fail.html"; // display error message
+          }
+        });
+</script>
+</body>
+</html>

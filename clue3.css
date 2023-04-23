@@ -1,0 +1,46 @@
+body {
+    background-image: url('imgs/elder.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+div {
+    /*background-color: #ffffff60;*/
+    color: #fff;
+    font-size: 45px;
+    padding: 200px 0 70px 0px;
+    text-align: center;
+}
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+    text-shadow: 0px 3px 3px whitesmoke;
+}
+a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited { text-decoration: none; }
+
+a:hover { 
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+}
+h1 {
+    font-size: 35px;
+    text-shadow: 0px 3px 3px whitesmoke;
+}
+
+h2 {
+    font-size: 30px;
+    text-shadow: 0px 3px 3px whitesmoke;
+}
+a:active { text-decoration: none; }
+h1:hover,h2:hover { 
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+}
